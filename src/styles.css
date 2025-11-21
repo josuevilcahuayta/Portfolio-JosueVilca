@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+/* ------------------ RESET ------------------ */
+* {
+
+  box-sizing: border-box;
+}
+html, body {
+      --bg: #0d0d0d;
+  --text: #f5f5f5;
+ background: #060806;
+background: linear-gradient(90deg, rgba(6, 8, 6, 1) 0%, rgba(30, 41, 48, 1) 54%, rgba(26, 48, 48, 1) 100%);
+  color: var(--text);
+}
+
+
+/* ------------------ FONDO ------------------ */
+
+
+/* ------------------ ESTRELLAS FIJAS ------------------ */

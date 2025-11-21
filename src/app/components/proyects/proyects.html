@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio - Proyectos</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#60A5FA", // A shade of blue similar to the screenshot
+            "background-light": "#F9FAFB", // Light gray
+            "background-dark": "#111827", // Dark gray from screenshot
+          },
+          fontFamily: {
+            display: ["Roboto", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.75rem", // 12px
+          },
+        },
+      },
+    };
+  </script>
+<style>
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto">
+<header class="mb-12">
+<h3 class="text-sm font-semibold uppercase tracking-wider text-primary">Proyectos</h3>
+<h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Mis proyectos destacados</h2>
+</header>
+<div class="mb-12">
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-4 py-2 text-sm font-medium rounded-full bg-primary text-white">Todos</button>
+<button class="px-4 py-2 text-sm font-medium rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Full Stack</button>
+<button class="px-4 py-2 text-sm font-medium rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Frontend</button>
+<button class="px-4 py-2 text-sm font-medium rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Backend</button>
+</div>
+</div>
+<div class="space-y-20">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+<div>
+<span class="text-xs font-semibold uppercase tracking-wide text-primary">Backend</span>
+<h3 class="mt-2 text-2xl font-bold text-gray-900 dark:text-white">Spring Backend</h3>
+<p class="mt-3 text-base text-gray-600 dark:text-gray-400">API Rest, Backend con Spring Boot, Spring JPA y Spring Security.</p>
+<div class="mt-6 flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" href="#">
+<span class="material-icons-outlined" style="font-size: 1.125rem;">code</span>
+                Código
+              </a>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">Java</span>
+<span class="px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">Spring Boot</span>
+<span class="px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">Spring Security</span>
+<span class="px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">Data JPA</span>
+<span class="px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">MySQL</span>
+</div>
+</div>
+</div>
+<div>
+<img alt="Screenshot of code in an editor for Spring Backend project" class="rounded-lg shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2pclqYjKm-TgqcSDzSQeSh7Zaxho2s2PDXIChZ4DEFESl8TzbRvN4S9O07HzHVsKanCNzrt9MKv75GesIZzeCZRGOQsKrQOFgYWi5oaTO7wOkUhJKGX2Rpp8K15rZxIjSCZv69AB_YYxz8DMY4NejN_DacTv-xnMVepPv2G3i7l-v6OmWbvZX1io4Si4zpOsEmlBGXaEREuJV4NP-48L5vnm4XjdYXHkL6LXCYSrMwXbWAEW98DwflVQl1j0Jd00ykRAWe4jaYyQ"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+<div>
+<span class="text-xs font-semibold uppercase tracking-wide text-primary">Backend</span>
+<h3 class="mt-2 text-2xl font-bold text-gray-900 dark:text-white">API Pizzeria</h3>
+<p class="mt-3 text-base text-gray-600 dark:text-gray-400">API Rest de una pizzería. CRUD y seguridad web con Spring.</p>
+<div class="mt-6 flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" href="#">
+<span class="material-icons-outlined" style="font-size: 1.125rem;">code</span>
+                Código
+              </a>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">Java</span>
+<span class="px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">Spring Boot</span>
+<span class="px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">JWT</span>
+<span class="px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">PostgreSQL</span>
+</div>
+</div>
+</div>
+<div>
+<img alt="Screenshot of code in an editor for API Pizzeria project" class="rounded-lg shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDzPMKd3GbHO7hmp96Sj80JSZsxQjyt-0ptYvKShhzFW_TxoPH6KKPoJrRyXXZIHg_WvSm7AVJxey7_THjGKD46-bRlEwjEQOl2i-nhKKQmdo3EtHCs8OsGQX3aG-NQG8IQQ2v690YN4W4fHrSS0j3Taj5YDk5PdBQuVjNTGTm0Ec5ZLIypsaeHGTM8z-9fO8GQPzIexYSD8akOKyrBVWEI2ECkDXfdR-oedHCDMBD7K0TITu3p_m30Hu9SFB7TmfxpelSkS78MTQ"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+<div>
+<span class="text-xs font-semibold uppercase tracking-wide text-primary">Frontend</span>
+<h3 class="mt-2 text-2xl font-bold text-gray-900 dark:text-white">E-commerce Frontend</h3>
+<p class="mt-3 text-base text-gray-600 dark:text-gray-400">Interfaz de usuario para una tienda en línea moderna y responsiva.</p>
+<div class="mt-6 flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" href="#">
+<span class="material-icons-outlined" style="font-size: 1.125rem;">code</span>
+                Código
+              </a>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">React</span>
+<span class="px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">Tailwind CSS</span>
+<span class="px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">Vite</span>
+<span class="px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">Redux</span>
+</div>
+</div>
+</div>
+<div>
+<img alt="Screenshot of a modern website UI for an e-commerce project" class="rounded-lg shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0faHKD1_eNnpMHJL5PNpV8HlPqM4nn1Hr-qax90oI6_Y_Dij85PrjPiz8ybHvc8NJQCYKGo5GZOXSDYT0k6QGO5VBkRzlUfA0F_FlPle43UjiGxleDyiORq5Q6j6IY91j3yjXiVIE5E-2URrNX4ZCfuUWvNaQ00hQ5pAnLoVnFHzFLeEaH8VpxQkJrtD5L2dCTZYvtTXCgBufbTVcy72C8XM7oSUROsM-RceoGgP5KCjSbcoH3qmvYxeFH7piRfdrKd8DO_UYnZI"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>

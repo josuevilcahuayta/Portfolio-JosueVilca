@@ -1,0 +1,18 @@
+.headerclass{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: whitesmoke;
+
+}
+
+/* Modo claro */
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+}
+
+
+
